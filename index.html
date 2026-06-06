@@ -250,25 +250,32 @@ body{
 
     background-size:400% 400%;
 
-    animation:fondoAnimado 6s ease infinite;
+    animation:fondoAnimado 3s ease infinite;
 
     overflow:hidden;
     height:100vh;
 }
-@keyframes fondoAnimado{
-
+    @keyframes fondoAnimado{
     0%{
         background-position:0% 50%;
     }
 
-    50%{
+    25%{
         background-position:100% 50%;
+    }
+
+    50%{
+        background-position:100% 100%;
+    }
+
+    75%{
+        background-position:0% 100%;
     }
 
     100%{
         background-position:0% 50%;
     }
-
+    
 }
     @media (max-width: 768px){
 
