@@ -463,14 +463,24 @@ function explosionFotos(){
 
             img.style.opacity = "1";
 
-            const posiciones = [
-              {x:5,y:5},
-              {x:35,y:8},
-             {x:65,y:5},
-              {x:10,y:45},
-              {x:40,y:55},
-              {x:70,y:40}
-          ];
+            const posiciones = window.innerWidth < 768
+? [
+    {x:2,y:8},
+    {x:35,y:10},
+    {x:68,y:8},
+    {x:5,y:38},
+    {x:35,y:45},
+    {x:68,y:38}
+  ]
+: [
+    {x:5,y:5},
+    {x:35,y:8},
+    {x:65,y:5},
+    {x:10,y:45},
+    {x:40,y:55},
+    {x:70,y:40}
+  ];
+        
 
          img.style.left = posiciones[i].x + "%";
          img.style.top = posiciones[i].y + "%";
