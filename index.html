@@ -15,20 +15,25 @@
     box-sizing:border-box;
     font-family:'Segoe UI',sans-serif;
 }
-
-body{
-    background:
-    linear-gradient(
-        230deg,
-        #25163d 15%,
-        #4b2f75 35%,
-        #7b3fa5 70%,
-        #ff7ac8 90%
+    body{
+    background: linear-gradient(
+        -45deg,
+        #25163d,
+        #4b2f75,
+        #7b3fa5,
+        #ff7ac8,
+        #ff9ed8,
+        #6f42c1
     );
 
-    overflow:hidden;
-    height:100vh;
-}
+    background-size: 500% 500%;
+
+    animation: fondoAnimado 15s ease infinite;
+
+    overflow: hidden;
+    height: 100vh;
+    }
+
 
 /* Pantalla inicial */
 
@@ -245,7 +250,7 @@ body{
 
     background-size:400% 400%;
 
-    animation:fondoAnimado 15s ease infinite;
+    animation:fondoAnimado 6s ease infinite;
 
     overflow:hidden;
     height:100vh;
